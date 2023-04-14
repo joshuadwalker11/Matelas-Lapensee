@@ -1,0 +1,318 @@
+html {
+  scroll-behavior: smooth;
+  background-color: #000;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 100%;
+  background-color: white;
+  margin: 0 auto;
+}
+
+#root-header {
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: space-evenly;
+
+
+}
+
+/* 
+font-sizes 26 / 12
+*/
+
+#header {
+  border: 2px solid #122850;
+  border-radius: 25px;
+  padding-right: 120px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+#nav-left {
+  display: inline-flex;
+}
+
+#nav-right {
+  display: inline-flex;
+}
+
+.menu {
+  font-size: 26pt;
+  color: #122850;
+}
+
+/* 
+dropdown stuff
+*/
+
+ul {
+  padding: 0;
+  list-style: none;
+  background: white;
+}
+
+ul li {
+  display: inline-block;
+  position: relative;
+  line-height: 21px;
+  text-align: left;
+}
+
+ul li a {
+  display: block;
+  padding: 8px 25px;
+  color: #122850;
+  text-decoration: none;
+  font-size: 16pt;
+
+  text-decoration: underline 0.15em #12285000;
+  transition: text-decoration-color 300ms;
+}
+
+ul li a:hover {
+  color: #122850;
+  background: white;
+  /* text-decoration: underline; */
+
+  text-decoration-color: #122850;
+}
+
+ul li ul.dropdown {
+  min-width: 100%;
+  /* Set width of the dropdown */
+  background: white;
+  display: none;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+}
+
+ul li:hover ul.dropdown {
+  display: block;
+  /* text-decoration: underline; */
+  /* Display the dropdown */
+}
+
+ul li ul.dropdown li {
+  display: block;
+
+}
+
+/* 
+this still needs to be centered 
+*/
+#home-logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  width: 400px;
+  height: 150px;
+  /* margin-left: -8vw; */
+}
+
+#madecanada {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -20px;
+}
+
+/* 
+when this hovers, change text to 'find out more' 
+*/
+
+#canadatext {
+  text-align: center;
+  font-size: 26pt;
+}
+
+#canada-logo {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  margin-right: 10px
+}
+
+/* 
+Anchors 
+*/
+
+#up-anchor {
+  position: fixed;
+  bottom: 95px;
+  right: 25px;
+  padding: 2px;
+}
+
+#anchor-img {
+  width: 40px;
+  height: 40px;
+}
+
+#insta-anchor {
+  position: fixed;
+  bottom: 52px;
+  right: 25px;
+  padding: 2px;
+}
+
+#insta-logo {
+  width: 40px;
+  height: 40px;
+}
+
+#facebook-anchor {
+  position: fixed;
+  bottom: 8px;
+  right: 25px;
+  padding: 2px;
+}
+
+#facebook-logo {
+  width: 40px;
+  height: 40px;
+}
+
+/* 
+IG feed and testimonials
+*/
+
+#slideshowquote-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#slideshow-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#slideshow-img {
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 800px;
+  height: 500px;
+}
+
+/* 
+bundle stuff
+*/
+
+#bundle-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 26pt;
+  text-decoration: underline;
+  margin-top: -50px;
+  color: #122850;
+  padding: 8px;
+}
+
+#bundle-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  color: #122850;
+}
+
+.bundle-img {
+  width: 260px;
+  height: 210px;
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 25px;
+  margin-top: -2vh;
+}
+
+.bundle-p {
+  margin-top: 1vh;
+  font-size: 26pt;
+  text-decoration: underline;
+}
+
+.bundle {
+  border: 2px solid black;
+  border-radius: 25px;
+  width: 300px;
+  height: 325px;
+}
+
+.bundle-sub {
+  margin-top: -3vh;
+  font-size: 18pt;
+}
+
+/* 
+Testimonials stuff 
+*/
+
+#testimonials-container {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
+}
+
+#testimonial-text {
+  font-size: 18pt;
+  display: flex;
+  text-align: center;
+  color: #122850
+}
+
+/* 
+sitemap 
+*/
+
+#sitemap-container {
+  margin-top: 6vh;
+  background-color: #122850;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.map {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.map>li>p {
+  color: white;
+  text-decoration: none;
+  font-size: 16pt;
+}
+
+.map-header {
+  color: white;
+  text-decoration: underline;
+  font-size: 18pt;
+}
+
+/* 
+footer 
+*/
+
+#footer {
+  font-size: 18pt;
+  color: #122850;
+  background-color: rgba(128, 128, 128, 0.486);
+  align-content: center;
+  width: 100%;
+}
